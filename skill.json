@@ -1,0 +1,38 @@
+{
+  "name": "genpark-workplace-neural-graph-enterprise-federated-search-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Enterprise workplace neural knowledge graph and federated search engine with strict ACL permission filtering across Slack, Google Drive, Jira, and Confluence.",
+  "author": "genpark",
+  "category": "enterprise-search",
+  "tags": [
+    "enterprise-search",
+    "neural-graph",
+    "federated-search",
+    "acl-permission-filter",
+    "glean-ai"
+  ],
+  "inputs": {
+    "user_query": {
+      "type": "string"
+    },
+    "user_permission_roles": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "search_id": {
+      "type": "string"
+    },
+    "top_cited_document_uri": {
+      "type": "string"
+    },
+    "neural_expert_author_identified": {
+      "type": "string"
+    },
+    "search_latency_ms": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
